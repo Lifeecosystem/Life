@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Life – Science is all for Life</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --bg-color: #050714;
+      --text-main: #ffffff;
+      --text-subtle: #a3aec2;
+      --accent-1: #ffb23f;
+      --accent-2: #ff5b7b;
+      --accent-3: #7a4bff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      background: radial-gradient(circle at top left, #151832 0, #050714 45%, #02030b 100%);
+      color: var(--text-main);
+      font-family: "Poppins", system-ui, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 1200px;
+      padding: 60px 24px 80px;
+      margin: 0 auto;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 36px;
+    }
+
+    .logo-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-img {
+      width: 240px;
+      max-width: 70vw;
+      filter: drop-shadow(0 0 32px rgba(255, 178, 63, 0.45));
+    }
+
+    .slogan-art {
+      font-family: "Pacifico", cursive;
+      font-size: 34px;
+      line-height: 1.35;
+      letter-spacing: 0.3px;
+      background: linear-gradient(120deg, var(--accent-1), var(--accent-2), var(--accent-3));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+      margin-top: 16px;
+    }
+
+    .subtitle {
+      margin-top: 6px;
+      max-width: 680px;
+      font-size: 18px;
+      line-height: 1.8;
+      font-weight: 600;
+      color: var(--text-subtle);
+      font-family: Arial, sans-serif;
+    }
+
+    .cta-area {
+      margin-top: 32px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 22px;
+    }
+
+    .btn-launch {
+      padding: 16px 48px;
+      border-radius: 999px;
+      border: none;
+      outline: none;
+      font-size: 18px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      cursor: pointer;
+      color: #050714;
+      background-image: linear-gradient(
+        120deg,
+        var(--accent-1),
+        var(--accent-2),
+        var(--accent-3)
+      );
+      box-shadow: 0 14px 36px rgba(0, 0, 0, 0.55);
+      transition: transform 0.18s ease;
+    }
+
+    .btn-launch:hover {
+      transform: translateY(-3px) scale(1.03);
+    }
+
+    /* 社媒按钮 —— 放大 + 图标 */
+    .socials {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 18px;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .social-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 20px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      background: rgba(7, 10, 28, 0.85);
+      color: var(--text-subtle);
+      text-decoration: none;
+      transition: 0.18s ease;
+    }
+
+    .social-link:hover {
+      color: white;
+      background: rgba(14, 18, 48, 0.95);
+      border-color: rgba(255, 255, 255, 0.4);
+    }
+
+    .social-icon {
+      width: 18px;
+      height: 18px;
+      filter: drop-shadow(0 0 6px rgba(255, 178, 63, 0.6));
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <section class="hero">
+
+      <!-- Logo -->
+      <div class="logo-wrapper">
+        <img 
+          src="life-logo.png"
+          alt="Life Logo"
+          class="logo-img"
+        />
+      </div>
+
+      <!-- Slogan -->
+      <h1 class="slogan-art">Science is all for Life.</h1>
+
+      <!-- Subtitle -->
+      <p class="subtitle">
+        A decentralized knowledge, funding, and reputation layer for science and health.
+      </p>
+
+      <!-- CTA -->
+      <div class="cta-area">
+
+        <button class="btn-launch">LAUNCH DAPP</button>
+
+        <div class="socials">
+
+  <!-- Twitter / X -->
+  <a href="https://x.com/lifeecosystem" target="_blank" class="social-link">
+    <img class="social-icon" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg"/>
+    Twitter / X
+  </a>
+
+  <!-- Discord -->
+  <a href="https://discord.gg/K5SEsZGE" target="_blank" class="social-link">
+    <img class="social-icon" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/discord.svg"/>
+    Discord
+  </a>
+
+  <!-- GitHub -->
+  <a href="https://github.com/Lifeecosystem?tab=projects" target="_blank" class="social-link">
+    <img class="social-icon" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg"/>
+    GitHub
+  </a>
+
+  <!-- Telegram -->
+  <a href="https://t.me/life_ecosysterm" target="_blank" class="social-link">
+    <img class="social-icon" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg"/>
+    Telegram
+  </a>
+
+</div>
+
+      </div>
+    </section>
+  </main>
+</body>
+</html>
